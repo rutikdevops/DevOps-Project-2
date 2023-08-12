@@ -35,10 +35,13 @@ systemctl status jenkins.service
 ```
 - Copy public ip of jenkins server and paste it in new tab with port no.8080
 <img width="576" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/75d4392c-c663-441e-baa8-39c11af26ead">
+
 - copy this path and paste in terminal with "cat" command
+  
 ---bash
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
+
 - Now copy & paste this passwd in jenkins. so, jenkins is ready.
 
 
