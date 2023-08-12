@@ -1,6 +1,30 @@
 # DevOps-Project-2
 - In this project, I build and deploy my application on Docker Container with the help of Ansible.
 ![Commit Code](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/2a2802e7-8dad-4d7a-ab47-9043f1aee546)
+<br></br>
+
+
+Once the latest code is available on the Git repository, Jenkins is capable of fetching the updated code, initiating a build using Maven, creating Docker images, and subsequently deploying these Docker containers onto the Docker host.
+In that case, we used Jenkins as a tool for both building and deploying applications.
+
+We are going to use Ansible as a deployment tool , so that Jenkins need not to do the administrative kind of activities.
+
+Because Jenkins is more efficiently work as a build tool along with Ansible.
+
+So in this case Jenkins is going to take the code from GitHub and build artifacts and copy those artifacts onto Ansible server.
+
+Now it is Ansible’s task to create images and deploy the containers.Ansible is going to take the artifact and with the help of Docker file it creates a Docker image.
+
+This Docker image, we can commit it into the Docker hub because Docker Hub is a repository to store Docker images.
+
+Now whenever we execute any Ansible playbook to deploy a container, this Docker host communicates with the Docker hub and pull the image whatever we mentioned in our playbook and create a container out of it.
+
+
+
+
+
+
+
 # Project Blog link :-
 # Project Steps :-
 - Create 4 ec2 instance name as:- (AWS Linux-2, t2 micro)
