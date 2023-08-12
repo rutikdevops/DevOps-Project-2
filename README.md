@@ -83,7 +83,7 @@ echo $PATH
 
 
 
-# 3. Install Maven Plugin and cinfigure Jenkins for Maven :-
+# 3. Install Maven Plugin and configure Jenkins for Maven :-
 Dashboard-> Manage Jenkins-> Pluins-> Available Plugins-> Maven Integration(Install this)
 Manage Jenkins-> Tools-> JDK
 ![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/652d9f27-0f0f-48c0-b921-4bfa415adafd)
@@ -105,7 +105,9 @@ Jenkins-> New Item-> Maven Project
 
 - In this job do this:-
 <img width="327" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/f87c1cb7-e1dc-4236-af4c-0c180c77f1a7">
+
 ![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/0dce3d42-4c3c-4aeb-96cf-39fbc033bd58)
+
 <img width="342" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/edebe965-eb60-40c5-b45c-9984426e7019">
 
 - Maven Build is successful:-
