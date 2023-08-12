@@ -175,10 +175,46 @@ cd /opt
 ls
 mkdir docker
 chown ansadmin:ansadmin docker    ## Using this ansadmin is owner of docker directory
+ls
+cd docker/
+ls
 ```
 
 - Jenkins-> New Project-> Do this mentioned in Img-> Build Now
 ![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/6498d30f-22ff-493c-b190-4034696b8262)
+
+- Now, webapp.war file is involved in docker directory
+
+
+
+
+# 6. Install and Configure Docker on Ansible Server
+```bash
+yum install docker -y
+```
+```bash
+id ansadmin
+usermod -aG docker ansadmin     ## provide all the access to ansadmin on the docker
+```
+```bash
+service docker start
+service docker status
+```
+```bash
+su - ansadmin
+cd /opt/docker/
+vi dockerfile     ## add below commande in dockerfile
+FROM tomcat:latest
+RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
+COPY ./*.war /usr/local/tomcat/webapps
+```
+
+
+
+
+
+
+
 
 
 
