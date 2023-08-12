@@ -212,6 +212,55 @@ COPY ./*.war /usr/local/tomcat/webapps
 
 
 
+# 7. Create Ansible Playbook to create Docker Image and Push that Image to DockerHub
+- In Ansivle Open host file
+ ```bash
+ vi /etc/ansible/hosts
+
+[Ansible]                       ## type this in editor
+(paste public Ip here)
+ ```
+```bash
+ssh-copy-id (paste here ansible private ip)
+## enter passwd 2 times
+```
+
+- Create Ansible playbook to create the docker image and push image to dockerhub
+```bash
+vi regapp.yml   ## paste below cmnds in editor
+---
+- hosts: ansible
+  tasks:
+  - name: create docker image
+    command: docker build -t regapp:latest .
+    args:
+      chdir: /opt/docker
+
+  - name: create tag to push image onto dockerhub
+    command: docker tag regapp:latest rutikdevops/regapp:latest
+
+  - name: push docker image
+    command: docker push rutikdevops/regapp:latest
+```
+
+
+- check indentation of playbook
+```bash
+ansible-playbook regapp.yml --check
+docker images
+docker login
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
