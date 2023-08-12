@@ -123,12 +123,62 @@ yum install git -y
 
 
 # 4. Ansible Server setup and Ansible Installation:-
+```bash
+ec2-user
+sudo su
+yum update -y
+hostnamectl set-hostname jenkins
+bash
+```
+- add user
+```bash
+useradd ansadmin
+passwd ansadmin      ## enter passwd 2 times
+visudo               ## In vi editor go to end of the file = press shift+g without press i
+ansadmin  ALL=(ALL)       NOPASSWD: ALL      ## add this in editor
+```
+<img width="615" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/d1a6bca1-5cf1-4b11-a670-229be1b5bf6b">
+
+```bash
+vi /etc/ssh/sshd_config      ##Do this changes in vi editor:- ** #PermitRootLogin yes (remove #) ** PasswordAuthentication no (replace no to yes)
+```
+
+- Now run this command:-
+```bash
+systemctl restart sshd
+```
+
+- Now switch to created user:-
+```bash
+sudo su - ansadmin
+```
+
+```bash
+yum install ansible -y
+amazon-linux-extras install ansible2 -y
+ansible --version
+```
+- Go to ansible server and type command:-
+```bash
+ssh-keygen      ##(and press enter 2 to 3 times)
+```
 
 
 
+# 5. Integrate Ansible with Jenkins:- 
+- Jenkins-> Manage Jenkins-> System-> Publish over SSH
+![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/f423a8e3-c8d0-41f5-8434-d0a6d52c6c4e)
 
+- Go to Ansible
+```bash
+cd /opt
+ls
+mkdir docker
+chown ansadmin:ansadmin docker    ## Using this ansadmin is owner of docker directory
+```
 
-
+- Jenkins-> New Project-> Do this mentioned in Img-> Build Now
+![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/6498d30f-22ff-493c-b190-4034696b8262)
 
 
 
