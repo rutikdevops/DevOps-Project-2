@@ -258,12 +258,53 @@ docker login
 
 
 # 8. Update Jenkins Job to use the Ansible Playbook
-Jenkins-> Project-> Configure
+- Jenkins-> Project-> Configure
 <img width="614" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/c291a265-49e7-4f73-a946-840f5c64acd0">
 - Now, your image is pushed in DockerHub
 
-# 9. 
+# 9. Webapp deploy to container
+- Do passwordless authentication between Ansible & Docker
+- Install apache on docker server
+```bash
+yum install httpd -y
+systemctl enable httpd
+systemctl start httpd
+systemctl status httpd
+```
 
+- In Ansible Open host file
+ ```bash
+ vi /etc/ansible/hosts
+
+[docker]                       ## type this in editor
+(paste public Ip here)
+ ```
+```bash
+ssh-copy-id (paste here docker private ip)
+## enter passwd 2 times
+```
+
+- Create Ansible playbook to deploy webapp on server:-
+```bash
+vi deploy_regapp.yml   ## paste below cmnds in editor
+---
+- hosts: docker
+  tasks:
+    - name: stop existing container
+      command: docker stop regapp-server
+      ignore_errors: yes
+    - name: remove the container
+      command: docker rm regapp-server
+      ignore_errors: yes
+    - name: remove image
+      command: docker rmi rutikdevops/regapp:latest
+      ignore_errors: yes
+    - name: create container
+      command: docker run -d --name regapp-server -p 8082:8080 rutikdevops/regapp:latest
+```
+
+- Now, regapp sussessfully host on server
+  
 
 
 
