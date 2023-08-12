@@ -5,11 +5,8 @@
 
 
 Once the latest code is available on the Git repository, Jenkins is capable of fetching the updated code, initiating a build using Maven, creating Docker images, and subsequently deploying these Docker containers onto the Docker host.
-In that case, we used Jenkins as a tool for both building and deploying applications.
 
-We are going to use Ansible as a deployment tool , so that Jenkins need not to do the administrative kind of activities.
-
-Because Jenkins is more efficiently work as a build tool along with Ansible.
+In that case, we used Jenkins as a tool for building and  used docker for deploying applications.
 
 So in this case Jenkins is going to take the code from GitHub and build artifacts and copy those artifacts onto Ansible server.
 
@@ -18,10 +15,6 @@ Now it is Ansible’s task to create images and deploy the containers.Ansible is
 This Docker image, we can commit it into the Docker hub because Docker Hub is a repository to store Docker images.
 
 Now whenever we execute any Ansible playbook to deploy a container, this Docker host communicates with the Docker hub and pull the image whatever we mentioned in our playbook and create a container out of it.
-
-
-
-
 
 
 
