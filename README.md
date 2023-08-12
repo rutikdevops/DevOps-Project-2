@@ -36,13 +36,47 @@ systemctl status jenkins.service
 - Copy public ip of jenkins server and paste it in new tab with port no.8080
 <img width="576" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/75d4392c-c663-441e-baa8-39c11af26ead">
 
-- copy this path and paste in terminal with "cat" command
-  
+- copy this path and paste in terminal with "cat" command 
 ---bash
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
 - Now copy & paste this passwd in jenkins. so, jenkins is ready.
+
+
+# 2. Install and Configure the Maven :-
+```bash
+sudo su
+cd ~
+pwd
+cd /opt
+wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
+tar -xvzf apache-maven-3.9.4-bin.tar.gz
+mv apache-maven-3.9.4 maven
+cd maven/
+cd bin/
+./mvn -v
+```
+```bash
+cd ~
+ll -a
+vim .bash_profile
+```
+- In the vi editor add this path :-
+```bash
+M2_HOME=/opt/maven
+M2=/opt/maven/bin
+JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto.x86_64
+PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2_HOME:$M2
+ ```
+- Find java path using this command:-
+```bash
+find / -name java-11*
+```
+
+
+
+
 
 
 
