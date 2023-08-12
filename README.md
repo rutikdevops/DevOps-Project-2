@@ -65,6 +65,7 @@ vim .bash_profile
 - In the vi editor add this path :-
 <img width="373" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/9db87c99-c213-4f9a-bec4-9f92591ea521">
 
+
 ```bash
 M2_HOME=/opt/maven
 M2=/opt/maven/bin
@@ -87,14 +88,17 @@ echo $PATH
 - Dashboard-> Manage Jenkins-> Pluins-> Available Plugins-> Maven Integration(Install this)
 - Manage Jenkins-> Tools-> JDK
 ![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/652d9f27-0f0f-48c0-b921-4bfa415adafd)
+<br></br>
 
 - Manage Jenkins-> Tools-> Maven
 ![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/c5cb7642-bb7c-424a-b2a4-4af5cc37b517)
+<br></br>
 
 - Dashboard-> Manage Jenkins-> Pluins-> Installed Plugins->github
 - GitHub Branch Source Plugin = Disable
 - GitHub plugin = Enable
 <img width="943" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/6f52861f-f1f8-41eb-af4a-0f694dd8b2ec">
+<br></br>
 
 - git installation on Jenkins server:-
 ```bash
@@ -162,12 +166,14 @@ ansible --version
 ```bash
 ssh-keygen      ##(and press enter 2 to 3 times)
 ```
-
+<br></br>
 
 
 # 5. Integrate Ansible with Jenkins:- 
 - Jenkins-> Manage Jenkins-> System-> Publish over SSH
+
 ![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/f423a8e3-c8d0-41f5-8434-d0a6d52c6c4e)
+<br></br>
 
 - Go to Ansible
 ```bash
@@ -184,7 +190,7 @@ ls
 ![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/6498d30f-22ff-493c-b190-4034696b8262)
 
 - Now, webapp.war file is involved in docker directory
-
+<br></br>
 
 
 
@@ -208,7 +214,7 @@ FROM tomcat:latest
 RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
 COPY ./*.war /usr/local/tomcat/webapps
 ```
-
+<br></br>
 
 
 
@@ -253,15 +259,19 @@ ansible-playbook regapp.yml --check
 docker images
 docker login
 ```
-
+<br></br>
 
 
 
 # 8. Update Jenkins Job to use the Ansible Playbook
 - Jenkins-> Project-> Configure
-<img width="614" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/c291a265-49e7-4f73-a946-840f5c64acd0">
 
+<img width="614" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/c291a265-49e7-4f73-a946-840f5c64acd0">
+<br></br>
 - Now, your image is pushed in DockerHub
+
+
+
 
 # 9. Webapp deploy to container
 - Do passwordless authentication between Ansible & Docker
