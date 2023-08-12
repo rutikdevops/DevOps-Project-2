@@ -64,6 +64,7 @@ vim .bash_profile
 ```
 - In the vi editor add this path :-
 <img width="373" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/9db87c99-c213-4f9a-bec4-9f92591ea521">
+
 ```bash
 M2_HOME=/opt/maven
 M2=/opt/maven/bin
