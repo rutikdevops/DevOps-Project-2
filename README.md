@@ -260,6 +260,7 @@ docker login
 # 8. Update Jenkins Job to use the Ansible Playbook
 - Jenkins-> Project-> Configure
 <img width="614" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/c291a265-49e7-4f73-a946-840f5c64acd0">
+
 - Now, your image is pushed in DockerHub
 
 # 9. Webapp deploy to container
