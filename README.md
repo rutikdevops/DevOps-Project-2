@@ -84,6 +84,39 @@ echo $PATH
 
 
 # 3. Install Maven Plugin and cinfigure Jenkins for Maven :-
+Dashboard-> Manage Jenkins-> Pluins-> Available Plugins-> Maven Integration(Install this)
+Manage Jenkins-> Tools-> JDK
+![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/652d9f27-0f0f-48c0-b921-4bfa415adafd)
+
+Manage Jenkins-> Tools-> Maven
+![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/c5cb7642-bb7c-424a-b2a4-4af5cc37b517)
+
+Dashboard-> Manage Jenkins-> Pluins-> Installed Plugins->github
+GitHub Branch Source Plugin = Disable
+GitHub plugin = Enable
+<img width="943" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/6f52861f-f1f8-41eb-af4a-0f694dd8b2ec">
+
+- git installation on Jenkins server:-
+```bash
+yum install git -y
+```
+Jenkins-> New Item-> Maven Project
+<img width="896" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/b08d1fce-85ac-4d0c-ac03-e15473e693d7">
+
+- In this job do this:-
+<img width="327" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/f87c1cb7-e1dc-4236-af4c-0c180c77f1a7">
+![image](https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/0dce3d42-4c3c-4aeb-96cf-39fbc033bd58)
+<img width="342" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/edebe965-eb60-40c5-b45c-9984426e7019">
+
+- Maven Build is successful:-
+<img width="960" alt="image" src="https://github.com/rutikdevops/DevOps-Project-2/assets/109506158/56b480b5-9ab0-4bdf-a488-5b0a7d123d31">
+
+
+
+
+
+# 4. Ansible Server setup and Ansible Installation:-
+
 
 
 
