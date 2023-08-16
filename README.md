@@ -19,6 +19,7 @@ Now whenever we execute any Ansible playbook to deploy a container, this Docker 
 
 
 # Project Blog link :-
+https://medium.com/@rutikdevops/build-and-deploy-application-on-docker-container-with-the-help-of-ansible-a54061ef7d3
 <br></br>
 
 
