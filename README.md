@@ -19,6 +19,9 @@ Now whenever we execute any Ansible playbook to deploy a container, this Docker 
 
 
 # Project Blog link :-
+<br></br>
+
+
 # Project Steps :-
 - Create 4 ec2 instance name as:- (AWS Linux-2, t2 micro)
 1. Jenkins-Server
@@ -332,11 +335,11 @@ vi deploy_regapp.yml   ## paste below cmnds in editor
 ```
 
 - Now, regapp sussessfully host on server
-  
+<br></br>
 
 
-
-
+# Project Reference :-
+- Virtual Techbox, YouTube:- https://youtu.be/5_s7EmZWz78
 
 
 
