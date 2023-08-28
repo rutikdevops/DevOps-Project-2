@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.example.TestGreeter" time="0.101" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="com.example.TestGreeter" time="0.154" errors="0" skipped="0">
   <properties>
     <property name="JOB_NAME" value="DevOps-Project-4"/>
     <property name="java.vendor" value="Amazon.com Inc."/>
     <property name="PWD" value="/var/lib/jenkins"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/15/display/redirect?page=tests"/>
+    <property name="RUN_TESTS_DISPLAY_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/42/display/redirect?page=tests"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="JENKINS_HOME" value="/var/lib/jenkins"/>
     <property name="PATH" value="/usr/lib/jvm/java-11-amazon-corretto.x86_64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin"/>
@@ -23,16 +23,16 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="user.language" value="en"/>
     <property name="JOB_BASE_NAME" value="DevOps-Project-4"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/15/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#15"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/42/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#42"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-amazon-corretto.x86_64/lib"/>
-    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="a5d31450333616826273846844b9dd1aabfb6a83"/>
+    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="2ccb506aa0d98fdca83f6c972aa0b5dcafce2893"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.version" value="11.0.20"/>
     <property name="user.timezone" value="UTC"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="NODE_NAME" value="built-in"/>
-    <property name="BUILD_ID" value="15"/>
+    <property name="BUILD_ID" value="42"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="SHELL" value="/bin/false"/>
@@ -45,13 +45,13 @@
     <property name="java.home" value="/usr/lib/jvm/java-11-amazon-corretto.x86_64"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="5.10.186-179.751.amzn2.x86_64"/>
-    <property name="RUN_DISPLAY_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/15/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/42/display/redirect"/>
     <property name="POM_VERSION" value="1.0-SNAPSHOT"/>
     <property name="sun.font.fontmanager" value="sun.awt.X11FontManager"/>
     <property name="path.separator" value=":"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/15/display/redirect?page=artifacts"/>
+    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/42/display/redirect?page=artifacts"/>
     <property name="java.vm.version" value="11.0.20+8-LTS"/>
-    <property name="GIT_PREVIOUS_COMMIT" value="a5d31450333616826273846844b9dd1aabfb6a83"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="2ccb506aa0d98fdca83f6c972aa0b5dcafce2893"/>
     <property name="JOB_DISPLAY_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/display/redirect"/>
     <property name="SHLVL" value="0"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -64,7 +64,7 @@
     <property name="HOME" value="/var/lib/jenkins"/>
     <property name="POM_GROUPID" value="com.example.maven-project"/>
     <property name="user.home" value="/var/lib/jenkins"/>
-    <property name="BUILD_TAG" value="jenkins-DevOps-Project-4-15"/>
+    <property name="BUILD_TAG" value="jenkins-DevOps-Project-4-42"/>
     <property name="JENKINS_SERVER_COOKIE" value="cc7db322406d5651"/>
     <property name="HUDSON_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/"/>
     <property name="java.version.date" value="2023-07-18"/>
@@ -75,7 +75,7 @@
     <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="maven.home" value="/opt/maven"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /opt/maven /var/lib/jenkins/%C/jenkins/war/WEB-INF/lib/remoting-3131.vf2b_b_798b_ce99.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.14.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.14.jar 43325"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /opt/maven /var/lib/jenkins/%C/jenkins/war/WEB-INF/lib/remoting-3131.vf2b_b_798b_ce99.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.14.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.14.jar 35625"/>
     <property name="java.class.path" value="/var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.14.jar:/opt/maven/boot/plexus-classworlds-2.7.0.jar:/opt/maven/conf/logging"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -90,7 +90,7 @@
     <property name="HUDSON_HOME" value="/var/lib/jenkins"/>
     <property name="PATH+MAVEN" value="/opt/maven/bin"/>
     <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
-    <property name="BUILD_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/15/"/>
+    <property name="BUILD_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/job/DevOps-Project-4/42/"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="user.dir" value="/var/lib/jenkins/workspace/DevOps-Project-4"/>
@@ -99,10 +99,10 @@
     <property name="line.separator" value="
 "/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="15"/>
+    <property name="BUILD_NUMBER" value="42"/>
     <property name="JENKINS_URL" value="http://ec2-13-235-18-40.ap-south-1.compute.amazonaws.com:8080/"/>
-    <property name="GIT_BRANCH" value="origin/master"/>
-    <property name="GIT_COMMIT" value="a5d31450333616826273846844b9dd1aabfb6a83"/>
+    <property name="GIT_BRANCH" value="origin/main"/>
+    <property name="GIT_COMMIT" value="444211d53096512aa34d71e277db4702cbf01508"/>
     <property name="LANG" value="en_US.UTF-8"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="maven3.interceptor" value="/var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.14.jar"/>
@@ -112,8 +112,8 @@
     <property name="java.specification.version" value="11"/>
     <property name="java.vendor.version" value="Corretto-11.0.20.8.1"/>
     <property name="USER" value="jenkins"/>
-    <property name="GIT_URL" value="https://github.com/ValaxyTech/hello-world.git"/>
+    <property name="GIT_URL" value="https://github.com/rutikdevops/DevOps-Project-4.git"/>
   </properties>
-  <testcase classname="com.example.TestGreeter" name="greetShouldIncludeGreetingPhrase" time="0.007"/>
-  <testcase classname="com.example.TestGreeter" name="greetShouldIncludeTheOneBeingGreeted" time="0.003"/>
+  <testcase classname="com.example.TestGreeter" name="greetShouldIncludeGreetingPhrase" time="0.012"/>
+  <testcase classname="com.example.TestGreeter" name="greetShouldIncludeTheOneBeingGreeted" time="0.014"/>
 </testsuite>
